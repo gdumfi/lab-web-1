@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mt-5 text-center">Об авторе</h1>
+<div class="row">
+    <div class="col-md-4 mb-3">
+        <img class="avatar" src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="Author">
+    </div>
+    <div class="col-md-8 text-justify d-flex align-items-center">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean faucibus velit vitae dolor luctus tempus. In ut lorem ullamcorper, tempus nisi in, sollicitudin mauris.
+            Phasellus ac eros sed elit euismod gravida. Vivamus non ultricies libero. Curabitur in blandit neque. Aenean suscipit, purus sit amet pulvinar maximus, libero urna elementum nunc, vel fringilla magna augue quis mauris.
+            Vestibulum non pretium nisl, vitae fringilla ex.
+        </p>
+    </div>
+</div>
+{% endblock %}
